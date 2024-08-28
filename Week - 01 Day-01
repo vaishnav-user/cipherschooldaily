@@ -1,0 +1,63 @@
+// Ques - 01 
+//Write a C++ program that takes two strings as input from the user and concatenates them. Then, output the concatenated string.
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+    string str1;
+    string str2;
+    cout<< "Enter the first string: ";
+    cin>>str1;
+    cout<<"Enter the second string: ";
+    cin>>str2;
+    string str3=str1+str2;
+    cout <<"Concatenated string: "<<str3<<endl;
+    return 0;
+}
+
+
+
+
+// Ques-02
+// Write a C++ program that takes five grades (integers) as input from the user and calculates the average grade. Output the average grade to the user.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a,b,c,d,e;
+    double avg;
+    cout << "Enter grade 1: ";
+    cin>> a;
+    cout <<"Enter grade 2: ";
+    cin>>b;
+    cout <<"Enter grade 3: ";
+    cin>>c;
+    cout<<"Enter grade 4: ";
+    cin>>d;
+    cout<< "Enter grade 5: ";
+    cin>>e;
+    
+    avg=(a+b+c+d+e)/5.0;
+    cout<<"The average grade is: "<<avg;
+}
+
+
+
+// Ques- 03 
+// Write a C++ program that takes an integer as input from the user and outputs its square.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num,sqr;
+    cout<<"Enter a number: ";
+    cin>>num;
+    sqr=num*num;
+    cout<<"The square of "<<num<<" is: "<<sqr;
+    return 0;
+    
+}
