@@ -1,0 +1,51 @@
+// Ques:01: 
+// Write a C++ program that takes two integers as input and performs the following arithmetic operations
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num1,num2;
+    
+    cout<<"Enter first integer: ";
+    cin>>num1;
+    cout<<"Enter second integer: ";
+    cin>>num2;
+    
+    
+    cout<<"Addition: "<<num1+num2<<endl;
+    cout<<"Subtraction: "<<num1-num2<<endl;
+    cout<<"Multiplication: "<<num1*num2<<endl;
+    cout<<"Division: "<<static_cast<double>(num1) / num2<<endl;
+    cout<<"Modulus: "<<num1%num2<<endl;
+}
+
+
+
+
+
+// Ques-02: 
+// Create a Complex class to represent complex numbers and overload the +, -, operators to perform arithmetic operations on complex numbers.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int real1, imag1, real2, imag2;
+
+    cout << "Enter real and imaginary part of Complex Number 1: ";
+    cin >> real1 >> imag1;
+
+    cout << "Enter real and imaginary part of Complex Number 2: ";
+    cin >> real2 >> imag2;
+
+    int realSum = real1 + real2;
+    int imagSum = imag1 + imag2;
+    cout << "Sum: " << realSum << " + " << imagSum << "i" << endl;
+
+    int realDiff = real1 - real2;
+    int imagDiff = imag1 - imag2;
+    cout << "Difference: " << realDiff << " + " << imagDiff << "i" << endl;
+
+    return 0;
+}
