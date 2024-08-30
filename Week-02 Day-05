@@ -1,0 +1,78 @@
+// Ques-01 
+// Write a C++ function that checks whether an integer is odd or even. If the integer is odd, print "Odd"; otherwise, print "Even."
+
+#include<iostream>
+using namespace std;
+
+void check(int a){
+    
+    if(a%2==0){
+        cout<<"Even";
+    }else{
+        cout<<"Odd";
+    }
+}
+
+int main(){
+    int x;
+    cout<<"Enter a number: ";
+    cin>>x;
+    check(x);
+}
+
+
+
+
+
+// Ques-02 
+// Write a C++ function that takes a string as input and reverses it.
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void rev(string a){
+    
+    int x=a.length();
+    string str(x,'\0');
+    for(int i=(x-1);i>=0;i--){
+        str[(x-1)-i]=a[i];
+    }
+    cout<<"Reversed string: "<<str;
+}
+
+int main(){
+    string x;
+    cout<<"Enter a string: ";
+    cin>>x;
+    rev(x);
+}
+
+
+
+
+// Ques-03 
+// Write a C++ function that takes a string as a parameter and checks how many vowels and consonants are in that string.
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void vov(string a){
+    int vowels=0;
+    int con=0;
+    for(char c : a){
+        if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'){
+            vowels++;
+        }else{
+            con++;
+        }
+    }
+    cout<<"Number of vowels: "<<vowels<<endl;
+    cout<<"Number of consonants: "<<con<<endl;
+    
+}
+int main(){
+    string a;
+    cout<<"Enter a string: ";
+    cin>>a;
+    vov(a);
+}
